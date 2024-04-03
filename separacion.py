@@ -9,7 +9,7 @@ Created on Wed Apr  3 16:39:32 2024
 # Samuel Elí Méndez Sánchez 196659
 # Santiago Casanova Díaz 189756
 # Eduardo Mateo Guajardo Rodriguez 166273
-# Sebastian Ibarra
+# Sebastian Ibarra Del Corral 193992
 # Sandra Reyes Benavides 179149
 
 import pandas as pd
