@@ -23,6 +23,36 @@ def paso_intpoint(u, v):
     alfa = min(np.amin(v_alfa), 1.0)        
     return alfa
 
+
+# Parametros
+# Q: Matriz cuadrada numpy de dimensiónn×n, 
+# donde n es el número de variables de decisión. 
+# Esta matriz representa la parte cuadrática del objetivo. 
+
+#F: Matriz numpy de dimensión p×n, donde p es el número de restricciones. 
+# Representa las restricciones de igualdad. 
+
+#c: Vector columna numpy de dimensión n×1. 
+# Representa el término lineal del objetivo. 
+
+# d: Vector columna numpy de dimensión p×1. 
+#Representa el lado derecho de las restricciones de igualdad.
+
+
+# Salida
+# x: Vector columna numpy de dimensión n×1. 
+# Representa la solución óptima de las variables de decisión. 
+
+# mu: Vector columna numpy de dimensión p×1. 
+# Representa los multiplicadores de Lagrange asociados 
+# a las restricciones de igualdad. 
+
+# z: Vector columna numpy de dimensión p×1. 
+# Representa las variables de holgura asociadas a las restricciones de igualdad. 
+
+#iter: Entero que indica el número de iteraciones 
+#realizadas hasta alcanzar la solución.
+
 def myqp_intpoint_modificado(Q, F, c, d):
     n = len(c)
     p = len(d)
